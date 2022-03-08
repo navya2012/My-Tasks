@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML Forms</title>
+	</head>
+	<body>
+				<!--- target="_blank"   method="post"   autocomplete="on", placeholder  form attributes   -->
+		<form target="_blank" method="get" autocomplete="on" id="form1">
+			<legend>Registration Form</legend><br/>
+				<label>First Name</label>
+				<input type="text" name="fname"/>
+				<label>Middle name</label>
+				<input type="text" name=mname" placeholder="Middle name"/><br/><br/>
+				<input type="submit" name="register"/>
+		</form><br/>
+				<!---   form attibute -  The "Last name" field below is outside the form element, but still part of the form.--->
+				<label for="lname">last Name</label>
+				<input type="text" id="lname" name="lname" form="form1"/><br/><br/>
+				<!---- autocomplete="off",  target="_self",   method="post"  -->
+		<form autocomplete="off" target="_self" method="post" >
+			<fieldset>
+				<legend>Registration Form</legend>
+				<!---- Disabled, value, maxlength, size, hidden, required ---->
+					<label>Surname</label>
+					<input type="text" name="sname" disabled><br/><br/>
+					<label>First Name</label>
+					<input type="text" name="fname" value="Navya" />
+					<input type="hidden" name="lname" value="Meghana"><br></br>
+					<label>E-Mail</label>
+					<input type="text" name="email" required><br/><br/>
+					<label>Password</label>
+					<input type="password" name="pwd" maxlength="5" size="10"/><br/><br/>
+				<!---size, optgroup --->		
+					<label>course</label>
+						<select name="Course" size="7">
+							<optgroup label="B.Tech">
+								<option value="EEE">EEE</option>  
+								<option value="ECE">ECE</option>  
+								<option value="CSE">CSE</option>  
+							</optgroup>
+							<optgroup label="M.TECH">
+								<option value="power systems">power systems</option>  
+								<option value="Wireless Communications">Wireless Communication</option>  
+								<option value="Computer Networks">Computer Networks</option> 
+							</optgroup>
+						</select><br/><br/>
+				<!---  datalist  -->	
+					<label>Location</label>
+					<input list="places">
+						<datalist id="places">
+							<option value="Guntur">
+							<option value="krishna">
+							<option value="kurnool">
+							<option value="chitoor">
+							<option value="east godavari">
+						</datalist><br></br>
+					   <!------radiobuttons --->
+					<label>Gender</label>
+					<input type="radio" name="gender" value="Female">Female
+					<input type="radio" name="gender" value="Male">Male<br/><br/>
+					   <!----- checkbox  -->
+				<legend>Programming Languages</legend>
+					<label>HTML</label>
+					<input type="checkbox"  name="HTML" value="HTML" /><br/>
+					<label>CSS</label>
+					<input type="checkbox"  name="CSS" value="CSS" /></br>
+					<label>JAVASCRIPT</label>
+					<input type="checkbox"  name="JAVASCRIPT" value="JAVASCRIPT" /><br/><br/>
+						<!---  colour, file, multiple, textarea, style, range --->
+					<label>Select color:</label>
+					<input type="color"  name="favcolor" value="green"/><br/><br/>
+					<label>Upload files</label>
+					<input type="file" name="myfile" multiple><br></br>
+					<label>Message</label>
+					<textarea name="message" style="width:300px; height:80px;"/> 
+					</textarea> <br/><br/>
+					<label>Rating</label>
+					<input type="range" name="rating" min="0" max="10"><br/><br/>
+						<!-- submit,   reset -->
+					<input type="submit" name="register"/>	
+					<input type="reset" name="reset"/>
+			</fieldset>
+		</form>
+	</body>
+<html>
