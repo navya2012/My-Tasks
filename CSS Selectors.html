@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS Selectors</title>
+		<style>
+			*{
+				color:orange;
+			}
+			li{
+				color:green;
+			}
+			.line1{
+				background-color:pink;
+				border:1px solid blue;
+			}
+			#color{
+				background-color:yellow;
+			}
+			
+			#layout{
+				display:flex;
+			}	
+			.coln{
+				flex:1;
+				flex:1;
+				flex:1;
+				flex:1;
+				flex:1;
+			}
+			[href]{
+				background-color:cyan;
+			}
+			[value="Navya"]{
+				color:violet;
+			}
+			[width^='20']{
+				border:5px solid blue;
+			}
+			[type="text"]{
+				border:2px solid red;
+			}
+			[size*='1']{
+				border:3px solid black;
+			}
+			[target^='_se']{
+				background-color:pink;
+			}
+			[controls]{
+				border:5px solid red;
+			}
+			[disabled]{
+				border:3px solid green;
+			}	
+			[alt$='age']{
+				border:2px solid black;
+			}
+			[loop]{
+				border:3px solid green;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>CASCADING STYLE SHEETS</h1>
+		<ul>
+			<li>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.</li>
+		    <li>CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</li>
+		</ul><br/><br/>
+		<form autocomplete="off" target="_self">
+			<fieldset>
+				<legend class="line1">Registration Form</legend>
+				<!---- Disabled, value, maxlength, size, hidden, required ---->
+					<label>Surname</label>
+					<input type="text" name="sname" disabled><br/><br/>
+					<label>First Name</label>
+					<input type="text" name="fname" value="Navya" /><br/><br/>
+					<label>E-Mail</label>
+					<input type="text" name="email"  size="50" required><br/><br/>
+					<label id="color">Password</label>
+					<input type="password" name="pwd" maxlength="5" size="10"/><br/><br/>
+					<label>HTML</label>
+					<input type="checkbox"  name="HTML" value="HTML" /><br/>
+					<label>CSS</label>
+					<input type="checkbox"  name="CSS" value="CSS" /></br>
+			</fieldset>
+		</form><br/><br/>		
+		<div id="layout">
+			<div class="coln">
+				<a href="https://nareshit.in/" target="_blank"> Navigate to Home page</a>
+			</div>
+			<div class="coln">
+				<video controls>
+					<source src="C:/Users/DELL/OneDrive/Desktop/10000%20CODERS/Multimedia/video.mp4.mp4" type="video/mp4"  />
+				</video>
+			</div>
+			<div class="coln">
+				<img src="../images/flower.jpg"  alt="flower" width="200" height="200"/>
+			</div>
+			<div class="coln">
+				<img src="../../DESKTOP/nature.jpg"   alt="no image"/>
+			</div>
+			<div class="coln">
+				<audio controls loop>
+					<source src="C:/Users/DELL/OneDrive/Desktop/10000%20CODERS/Multimedia/audio.mp3.mp3" type="audio/mp3"/>
+				</audio>
+			</div>
+		</div>
+	</body>
+</html>
