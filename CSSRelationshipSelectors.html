@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS Relationship Selectors</title>
+		<style>
+			div p{
+				color:blue;
+			}
+			ul > li{
+				list-style-type:square;
+				color:cyan;
+			}
+			ol li{
+				list-style-type:upper-alpha;
+				color:green;
+			}
+			div + p{
+				color:red;
+			}
+			div ~ p{
+				font-size:30px;
+			}
+			div h3{
+				background-color:pink;
+			}
+			select optgroup{
+				font-size:20px;
+			}
+			optgroup option{
+				color:violet;
+			}
+			section div{
+				color:yellow;
+			}
+			.line1{
+				font-size:30px;
+				background-color:black;
+			}
+			table, th, td{
+				border:1px solid green;
+				padding:0px;
+				width :30%;
+				border-spacing:0px;
+			}
+			tr th{
+				font-size:20px;
+			}
+			tr td{
+				color:indigo;
+				text-align:center;
+			}
+			colgroup col{
+				background-color:pink;
+			}
+			colgroup col{
+				background-color:violet;
+			}
+			[span="3"]{
+				background-color:pink;
+			}
+		</style>
+	</head>
+	<body>
+		<section> 
+			<div class="line1">DESCENDANT SELECTORS</div>
+			<div>
+				<p> This selector is used to select all the child elements (or) direct child elements of the specified tag.</p>
+			</div>
+			<div>
+				<h3>DIRECT CHILDREN SELECTORS</h3>
+				<p class="line1">This child selector selects all elements that are specified in that parent element.</p>
+			</div>
+			<div>
+				<p>ADJACENT SIBILING SELECTORS</p>
+				<p>The Adjacent sibling selector is used to select the element that is  next to the specified selector tag. 
+				 selects only one tag that is just next to the specified tag.</p>
+			</div>
+			<p>GENERAL SIBILING SELECTORS</p>		
+			<p>The general sibling selector selects all elements that are next siblings of a specified element.</p>
+			<ul>
+				<li>RELATIONSHIP SELECTORS</li><br/>
+					<ol>
+						<li>DESCENDANT SELECTORS</li>
+						<li>DIRECT CHILDREN SELECTORS</li>
+						<li>ADJACENT SIBILING SELECTORS</li>
+						<li>GENERAL SIBILING SELECTORS</li>
+					</ol>
+			</ul><br/><br/>
+			<label>Selectors</label>
+						<select name="selectors" size="0">
+							<optgroup label="Attributes">
+								<option value="Value equals to">Value equals to</option>  
+								<option value="Value ends with">Value ends withoption>  
+								<option value="Value contains">Value contains</option>  
+							</optgroup>
+							<optgroup label="RELATIONSHIP">
+								<option value="Direct Child">Direct Child</option>  
+								<option value="Descendant">Descendant</option>  
+								<option value="Adjacent sibling">Adjacent sibling</option> 
+							</optgroup>
+						</select><br/><br/>
+			<table>  
+				<colgroup>
+					<col span="1">
+					<col span="3">
+				</colgroup>
+				<tr>
+					<th>S.NO</th>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+				<tr>
+				<tr>
+					<th>Name</th>
+					<td>sony</td>
+					<td>pinky</td>
+					<td>varsha</td>
+				<tr>
+				<tr>
+					<th>E-mail</th>
+					<td>sony@gmail</td>
+					<td>pinky@gmail</td>
+					<td>varsha@gmail</td>
+				<tr>
+				<tr>
+					<th>Phone Number</th>
+					<td>1567854569</td>
+					<td>2458759647</td>
+					<td>3537459876</td>
+				<tr>
+				<tr>
+					<th>place</th>
+					<td colspan="3">guntur</td>
+					<!--<td>guntur</td>
+					<td>guntur</td>-->
+				<tr>
+			</table>
+		</section>
+	</body>
+</html>

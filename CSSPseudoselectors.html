@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS pseudo Selectors</title>
+		<style>
+			p:first-letter{
+				font-size:30px;
+				color:yellow;
+			}
+			div:first-line{
+				color:cyan;
+			}
+			div p{
+				font-family:arial;
+				font-size:20px;
+			}
+			ul li:nth-child(2n){
+				list-style-type:circle;
+				color:pink	;
+			}
+			ol li:nth-child(2n){
+				background-color:violet;
+			}
+			::marker{
+				color:darkblue;
+			}
+			::selection{
+				background-color:yellow; /* click on the text,that text is specified with background colour yellow*/
+			}
+			/* unvisited link */
+			a:link{
+			  color: red;
+			}
+			/* visited link */
+			a:visited{
+			  color: green;
+			}
+			/* mouse over link */
+			a:hover{
+			  color: hotpink;
+			}
+			/* selected link */
+			a:active{
+			  color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<p>HyperText Markup Language is the most basic building block of the Web.It defines the meaning and structure of web content.</p>
+			<p>"Hypertext" refers to links that connect web pages to one another, either within a single website or between websites. Links are a fundamental aspect of the Web.</p>
+			<p>By uploading content to the Internet and linking it to pages created by other people, you become an active participant in the World Wide Web.</p>
+		</div>
+		<p>Cascading Style Sheets  is a stylesheet language used to describe the presentation of a document written in HTML</p>
+		<ol>
+			<li>javaScript is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions.</li> 
+			<li>While it is most well-known as the scripting language for Web pages.</li>
+			<li>JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative style.</li>
+		</ol><br/><br/>
+		<ul>
+			<li>Global selectors</li>
+			<li>Tag selectors</li>
+			<li>Class selectors</li>
+			<li>ID selectors</li>
+		</ul>
+		<a href="https://www.geeksforgeeks.com/" target="_blank" >navigate to geeksforgeeks</a>	<br/><br/>
+		<a href="https://www.nareshitechnologies;.co/" target="_blank" >navigate to nareshitechnologies</a>	
+	</body>
+</html>
