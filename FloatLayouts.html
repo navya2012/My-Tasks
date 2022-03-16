@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Float Layout</title>
+		<style>
+			#layout{
+				float:left;
+				width:100%;
+				border:1px solid blue;
+				padding:20px;
+				box-sizing:border-box;
+				/*margin:10px;*/
+			}
+			#coln{
+				float:left;
+				width:25%;
+				height:70px;
+				text-align:left;
+			}
+			.line1:nth-child(2){
+				color:red;
+			}
+			#coln1{
+				float:right;
+				width:20%;
+				height:100px;	
+				text-align:left;
+			}
+			#coln2{
+				float:left;
+				width:16%;
+				height:130px;	
+				text-align:center;
+			}
+			.line:nth-child(3){
+				font-size:20px;
+			}
+			[src*='DELL']{
+				height:130px;
+				width:150px;
+				
+			}
+			.line3{
+				border-style:dotted;
+				padding:5px;
+			}
+			#coln3{
+				float:left;
+				width:14%;
+				height:130px;	
+				text-align:left;
+			}
+			.line4:nth-child(3){
+				background-color:yellow;
+				padding:10px;
+			}
+			.tint{
+				border-style:dashed;
+			}
+		</style>
+	<body>
+		<section>
+			<h2>4 columns layout</h2>
+			<div id="layout">
+				<div id="coln">
+					<p>The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it</p>
+				</div>
+				<div id="coln" class="line1">
+					<p>The element is removed from the normal flow of the page, though still remaining a part of the flow</p>.
+				</div>
+				<div id="coln">
+					<p>The element must float on the left side of its containing block.</p>
+				</div>
+				<div id="coln">	
+					<p>A floating element is one where the computed value of float is not none.</p>
+				</div>
+			</div><br/></br>
+			<h2>5 columns layput</h2>
+			<div id="layout">
+				<div id="coln1">
+					<p>The element must float on the right side of its containing block.</p>
+				</div>
+				<div id="coln1">
+					<p>A floated element is at least as tall as its tallest nested floated children.</p>
+				</div>
+				<div id="coln1" class="line">
+					<p>The float property was originally defined so that authors could specify that an element would float to the left or right</p>
+				</div>
+				<div id="coln1">
+					<p>The element generates a block box that is floated to the right. Content flows on the left side of the box, starting at the top</p>
+				</div>
+				<div id="coln1">
+					<p>The element generates a block box that is floated to the left. Content flows on the right side of the box, starting at the top</p>
+				</div>
+			</div><br/><br/>
+			<h2>6 columns layout</h2>
+			<div id="layout">
+				<div id="coln2">
+					<img src="C:/Users/DELL/Desktop/japan.jpg" />
+				</div>
+				<div id="coln2">
+					<p>Tokyo is one of the bustling metropolises in the world that grows forward with a clever mix of both traditional values and contemporary developments.</p>
+				</div>
+				
+				<div id="coln2">
+					<p>CSS was developed and is maintained by the World Wide Web Consortium (W3C).</p>
+				</div>
+				<div id="coln2">
+					<img src="C:/Users/DELL/Desktop/red-roses.jpg"/>
+				</div>
+				<div id="coln2" >
+					<p class="line3">CSS is used to develop a consistent look and feel for all the pages.</p>
+				</div>
+				<div id="coln2">
+					<img src="C:/Users/DELL/Desktop/puppy.jpg" />
+				</div>
+			</div><br/><br/>
+			<h2>7 columns layout</h2>
+			<div id="layout">
+				<div id="coln3">
+					<p>HyperText Markup Language is the most basic building block of the Web.It defines the meaning and structure of web content.</p>	
+				</div>
+				<div id="coln3">
+					<img src="C:/Users/DELL/Desktop/hillstation.jpg" /> 	
+				</div>
+				<div id="coln3" class="line4">
+					<p>Cascading Style Sheets  is a stylesheet language used to describe the presentation of a document written in HTML</p>
+				</div>
+				<div id="coln3">
+					<p>The descendant selector or, more accurately, the descendant combinator lets you combine two or more selectors so you can be more specific in your selection method</p>
+				</div>
+				<div id="coln3">
+					<p>The universal selector works like a wildcard character, selecting all elements on a page.</p>
+				</div>
+				<div id="coln3">
+					<img class="tint"  src="C:/Users/DELL/Desktop/10000%20CODERS/treee.jpg" />
+				</div>
+				<div id="coln3">
+					<p>The class selector also matches all elements on the page that have their class attribute set to the same value as the class</p>
+				</div>
+			</div><br/><br/><br/>
+		</section>
+	</body>
+</html>
+		

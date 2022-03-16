@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>only Flex Layout</title>
+		<style>
+			#layout{
+				display:flex;
+				height:30px;
+			}
+			.border{
+				border-bottom:1px solid red;
+			}
+			#coln{
+				flex:1;
+			}
+			.edge{
+				border:1px solid blue;
+			}
+			#layout1{
+				display:flex;
+				flex-wrap:wrap;
+				border:1px solid blue;
+			}
+			   /*  flex-wrap, flex- flow  */
+			#coln1{
+				flex:1
+				width: 75px;
+				margin: 10px;
+				text-align: center;
+				height: 30px;
+				font-size: 20px;
+			}
+			     /*  justify-content  */
+			#layout2{
+				display:flex;
+				justify-content:center;
+				border:1px solid blue;
+			}
+			#coln2{
+				flex:1
+				width: 75px;
+				margin: 10px;
+				text-align: center;
+				height: 30px;
+				font-size: 20px;
+			}
+		</style>
+	<body>
+		<section>
+			<main class="edge">
+				<div id="layout" class="border">
+					<div id="coln">1
+					</div>
+					<div id="coln">2
+					</div>
+					<div id="coln">3
+					</div>
+				</div>
+				<div id="layout" class="border">
+					<div id="coln">1
+					</div>
+					<div id="coln">2
+					</div>
+					<div id="coln">3
+					</div>
+					<div id="coln">4
+					</div>
+				</div>
+				<div id="layout" class="border">
+					<div id="coln">1
+					</div>
+					<div id="coln">2
+					</div>
+					<div id="coln">3
+					</div>
+					<div id="coln">4
+					</div>
+					<div id="coln">5
+					</div>
+				</div>
+				<div id="layout" class="border">
+					<div id="coln">1
+					</div>
+					<div id="coln">2
+					</div>
+					<div id="coln">3
+					</div>
+					<div id="coln">4
+					</div>
+					<div id="coln">5
+					</div>
+					<div id="coln">6
+					</div>
+				</div>
+				<div id="layout">
+					<div id="coln">1
+					</div>
+					<div id="coln">2
+					</div>
+					<div id="coln">3
+					</div>
+					<div id="coln">4
+					</div>
+					<div id="coln">5
+					</div>
+					<div id="coln">6
+					</div>
+					<div id="coln">7
+					</div>
+				</div>
+			</main><br/><br/><br/>
+			<div id="layout1">
+					<div id="coln1">Real me
+					</div>
+					<div id="coln1">Samsung
+					</div>
+					<div id="coln1">Read mi
+					</div>
+					<div id="coln1">One Plus
+					</div>
+					<div id="coln1">Leceo
+					</div>
+					<div id="coln1">oppo
+					</div>
+					<div id="coln1">Apple
+					</div>
+					<div id="coln1">LG
+					</div>
+					<div id="coln1">iphone
+					</div>
+			</div><br/><br/><br/>
+			<div id="layout2">
+					<div id="coln2">Real me
+					</div>
+					<div id="coln2">Samsung
+					</div>
+					<div id="coln2">Read mi
+					</div>
+					<div id="coln2">One Plus
+					</div>
+			</div>
+		</section>
+	</body>
+</html>
