@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>img Layout</title>
+		<style>
+		.line{
+			border:2px solid blue;
+		}
+		#flex-container{
+			display:flex;
+		}
+		.space1{
+			flex:1;
+		}
+		.space9{
+			flex:9;
+		}
+		.space2{
+			flex:2;
+		}
+		.space3{
+			flex:3;
+		}
+		.edge{
+			border-bottom:2px solid red; height:50px; background-color:pink;
+		}
+		.fig{
+			height:50px;
+			width:100px;
+		}
+		.button1{
+			background-color:green; color:white; padding:15px 30px;
+		}
+		.button{
+			background-color:black; color:white; padding:15px 30px;
+		}
+		.edge1{
+			height:800px; 
+		}
+		.border{
+			border-right:2px solid red;
+			display:grid;
+			grid-template-columns:300px;
+			grid-template-rows:23% 28% 31%;
+			row-gap:30px;
+			padding-left:20px;
+			padding-top:30px;
+		}
+		.grid{
+			border:1px solid;
+			padding:10px;
+			text-align:left;
+		}
+		.fig1{
+			height:200px;
+		}
+		[controls]{
+			width:200px;
+			height:200px;
+			padding-left:20px;
+		}
+		.space0.5{
+			flex:0.5;
+		}
+		.divide{
+			padding:15px;
+		}
+		</style>
+	<body>
+		<section class="line">
+			<header id="flex-container" class="edge">
+				<div class="space2">
+					<img class="fig" src="C:/Users/DELL/Desktop/amazonlogo.jpg" />
+				</div>
+				<div class="space2 divide">
+					<input type="search" name="search" placeholder="Search for products,brands and more;" size="50" maxlength="100"/>
+				</div>
+				<div class="space9">
+				</div>
+				<div class="space1">
+					<input type="button" class="button1" value="Home">
+				</div>
+				<div class="space1">
+					<input type="button" class="button" value="News">
+				</div>
+				<div class="space1">
+					<input type="button" class="button" value="Contact">
+				</div>
+				<div class="space1">
+					<input type="button" class="button" value="About">
+				</div>
+			</header>
+			<main id="flex-container" class="edge1">
+				<div class="space1 border">
+					<div class="grid">
+						<h3>Programming Languages:</h3>
+						<input type="radio" name="gender" value="HTML">HTML<br/>
+						<input type="radio" name="gender" value="CSS">CSS<br/>
+						<input type="radio" name="gender" value="JAVASCRIPT">JAVASCRIPT<br/>
+						<input type="radio" name="gender" value="BOOTSTRAP">BOOTSTRAP<br/>
+						<input type="radio" name="gender" value="JQUERRY">JQUERRY
+					</div>
+					<div class="grid">
+						<h3>Prices:</h3>
+						<input type="checkbox"  name="price"/>Under₹1,000<br/>
+						<input type="checkbox"  name="price"/>₹1,000-₹5,000<br/>
+						<input type="checkbox"  name="price"/>₹5,000-₹10,000<br/>
+						<input type="checkbox"  name="price"/>₹10,000-₹20,000<br/>
+						<input type="checkbox"  name="price"/>₹20,000-₹50,000<br/>
+						<input type="checkbox"  name="price"/>₹50,000-₹70,000<br/>
+						<input type="checkbox"  name="price"/>Over ₹20,000<br/>
+					</div>
+					<div class="grid">
+						<h3>Shopping Apps</h3>
+						<li>Amazon is an American multinational technology company which focuses on e-commerce, cloud computing.</li>
+						<li>Flipkart is an Indian e-commerce company, headquartered in Bangalore, Karnataka, India.</li>
+						<li>Meesho is an indian e-commerce company, headquartered in Bangalore, India.</li>	
+					</div>
+				</div>
+				<div class="space3" id="flex-container">
+					<div class="space1">
+						<figure>
+							<img class="fig1" src="https://rukminim2.flixcart.com/image/312/312/ku04o7k0/mobile/x/x/t/9i-sport-mzb0a10in-redmi-original-imag785rwf3q8sft.jpeg?q=70"/>
+						</figure>
+						<input type="checkbox" name="Add to Compare"/>
+						<label>Add to Compare</label><br/><br/>
+						<video controls>
+							<source src="C:/Users/DELL/Downloads/amazon.mp4" type="video/mp4" />
+						</video><br/><br/>
+						<input type="checkbox" name="Add to Compare"/>
+						<label>Add to Compare</label>
+						<audio controls>
+							<source src="C:/Users/DELL/Desktop/10000%20CODERS/Multimedia/audio.ogg" type="audio/ogg"/>
+						</audio><br/><br/>
+						<input type="checkbox" name="Add to Compare"/>
+						<label>Add to Compare</label>
+					</div>
+					<div class="space2">
+						<h2>REDMI 9i Sport (Coral Green, 64GB)</h2>
+						<small>72,653 Ratings & 3,832 Reviews</small>
+						<ul>
+							<li>4 GB RAM | 64GB ROM | Expandable Upto 512GB</li>
+							<li>16.59 cm (6.53 inch) HD+ Display</li>
+							<li>13MP Rear Camera | 5MP Front Camera</li>
+							<li>5000 mAh Li-Polymer Battery</li>
+							<li>MediaTek Helio G25 Processor</li>
+							<li>Brand Warranty of 1 year Available for Mobile and 6 Months For Accessories</li>
+						</ul><br/><br/><br/><br/>
+						<h2>LENOVO IDEAPAD 3 CORE i3 10th Gen - (8 GB/256 GB SSD/Windows 11 Home) 15IML05IML05 Thin and Light Lapptop</h2>
+						<small>1,908 ratings & 217 Reviews</small>
+						<ul>
+							<li>Intel Core i3 processor(10th Gen)</li>
+							<li>8 GB DDRA4 RAM</li>
+							<li>WIndows 10 Operating Systems</li>
+							<li>256 GB SSD</li>
+							<li>39.62 cm (15.6inch) Display</li>
+							<li>Microsoft Office Home & Student 2019</li>
+							<li>2 Years Warranty</li>
+						</ul><br/>
+						<h2>boAt RocKerz 333 Upto 30 Hours Battery Bluetooth headset(Active black, In the ear)</h2>
+						<small>1,30,270 Ratings & 11,985 Reviews</small>
+					</div>
+					<div class="space0.5">
+						<h2>₹8,999</h2>
+						<del>₹9,999</del> 10%off<br/>
+						Free delivery<br/>
+						<p>Upto <b>₹8,450</b> Off on Exchange.<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+						<h2>₹37,940</h2>
+						<del>₹56,590</del> 32%off
+						<p><small>Free delivery</small></p>
+						<p>upto <b>₹18,100</b> off on Exchange</p><br/><br/><br/><br/><br/><br/><br/><br/>
+						<h2>₹1,499</h2>
+						<del>₹3,990</del>  62%off
+					</div>
+				</div>
+			</main>
+		</section>
+	</body>
+</html>
