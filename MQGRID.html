@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>mq grid</title>
+        <style>
+            
+            .container figure{
+                
+                border: 3px solid coral;
+            }
+            @media screen and (max-width: 600px) {/* Targetting mobile devices*/
+                .container{
+                    display: grid;
+                    grid-template-columns: 100%;
+                    grid-template-rows: 285px 285px 285px 285px;
+                }
+				p{
+					padding:20px;
+					color:violet;
+				}
+            }
+            
+            @media screen and (min-width: 768px) {/*targetting tablets*/
+                .container{
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    grid-template-rows: 285px 285px;
+                }
+				p{
+					padding:20px;
+					background-color:yellow;
+				}
+            }
+            @media screen and (min-width: 1024px) {/*targetting laptops*/
+                .container{
+                    display: grid;
+                    grid-template-columns: 25% 25% 25% 25%;
+                    grid-template-rows: 285px;
+                }
+				p{
+					padding:20px;
+					background-color:green;
+					color:red;
+				}
+            }
+        </style>
+    </head>
+    <body>
+		<p>HyperText Markup Language is the most basic building block of the Web.It defines the meaning and structure of web content.
+		"Hypertext" refers to links that connect web pages to one another, either within a single website or between websites. Links are a 
+		fundamental aspect of the Web.By uploading content to the Internet and linking it to pages created by other people, you become an 
+		active participant in the World Wide Web.</p><br/><br/><br/>
+        <section class="container">
+            <figure>
+                <img src="C:/Users/DELL/Desktop/amazonlogo.jpg" width="100%" height="250px">
+                
+            </figure>
+            <figure>
+                <img src="C:/Users/DELL/Desktop/flipkart.jpg" width="100%" height="250px" />
+                
+            </figure>
+            <figure>
+                <img src="C:/Users/DELL/Desktop/meesho.jpg" width="100%" height="250px"/>
+                
+            </figure>
+            <figure>
+                <img src="C:/Users/DELL/Desktop/snapdeal.jpg" width="100%" height="250px"/>
+                
+            </figure>
+        </section>
+    </body>
+</html>
