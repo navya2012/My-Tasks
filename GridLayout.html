@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>grid Layout</title>
+		<style>
+			section{
+				border:1px solid blue;
+				display:grid;
+				grid-template-rows:70px 70px 70px 250px;
+				grid-template-columns:30% 30% 20%;
+				padding:20px;
+				gap:30px;
+				background-color:cyan;
+			}
+			div{
+				background-color:pink;
+				text-align:left;
+				padding:15px;
+			}
+			.line{
+				text-align:center;
+			}
+			.one{
+				height:150px;
+				width:100px;
+			}			
+		</style>
+	<body>
+		<h2>GRID LAYOUT</h2>
+		<section>
+			<div>A grid layout consists of a parent element, with one or more child elements.</div>
+			<div>Grid-based layout system, with rows and columns, makes it easier to design web pages.</div>
+			<div>The vertical lines of grid items are called columns.</div>
+			<div>The horizontal lines of grid items are called rows.</div>
+			<div>The spaces between each column are called column-gaps.</div>
+			<div>The spaces between each row are called row-gaps</div>
+			<div>The gap is a shorthand property for the row-gap and the column-gap properties</div>
+			<div>The gap can also be used to set both the row gap and the column gap in one value</div>
+			<div>The lines between columns are called column lines.</div>
+			<div class="line">
+				<img class="one"  src="https://cdn-icons-png.flaticon.com/512/888/888859.png" />
+				<p>HyperText Markup Language is the most basic building block of the Web.It defines the meaning and structure of web content.</p>
+			</div>
+			<div class="line">
+				<img class="one" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"/>
+				<p>Cascading Style Sheets  is a stylesheet language used to describe the presentation of a document written in HTML</p>
+			</div>
+		</section>
+	</body>
+</html>
