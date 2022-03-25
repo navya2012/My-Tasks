@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Image Properties</title>
+		<style>
+			section{
+				border:5px solid pink;
+				height:800px;
+				background-color:#E0E0E0;	
+				background-image:url("../images/fig1.jpg"), url("../images/fig2.jpg"), url("../images/fig3.jpg"),
+									url("../images/fig4.webp"), url("../images/fig5.webp");
+								
+				background-repeat:no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+				background-position:left top, right top, left bottom, right bottom, center;
+				background-size:400px;
+				color: red;
+			}
+			.line1 {
+  				border: 10px dotted black;
+				padding: 10px;
+				background: rgb(204, 157, 27);
+				background-clip: border-box;
+				font-size: x-large;
+			}
+			.line2 {
+				border: 10px dotted black;
+				padding: 10px;
+				background: rgb(230, 39, 172);
+				background-clip: padding-box;
+				font-size: x-large;
+			}
+			.line3 {
+				border: 10px dotted black;
+				padding: 10px;
+				background: rgb(245, 32, 4);
+				background-clip: content-box;
+				font-size: x-large;
+				}
+			
+		</style>
+	</head>
+	<body>
+		<section>
+		</section><br/><br/><br/><br/>
+		<h2>background-clip: border-box (this is default):</h2>
+		<div class="line1">
+			<p>The background extends behind the border.</p>
+		</div>
+		<h2>background-clip: padding-box:</h2>
+		<div class="line2">
+			<p>The background extends to the inside edge of the border.</p>
+		</div>
+	    <h2>background-clip: content-box:</h2>
+		 <div class="line3">
+			<p>The background extends to the edge of the content box.</p>
+    	</div><br/>
+		
+	</body>
+</html>
+	

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>grid properties</title>
+		<style>
+			main{
+				display:grid;
+				grid-template-rows:100px 100px 100px 100px 100px 100px ;
+				grid-template-columns:20% 30% 20% ;
+				padding:20px;
+				gap:20px;
+			}
+			.one{
+				grid-column: 1 /span 4;
+				background-image: linear-gradient(#ff0000, #ffff00);
+				text-align:center;
+				padding:20px;
+			}
+			.six{
+				grid-column:1/span4;
+				background-color:yellow;
+				 background-image: linear-gradient(to bottom right, #ab47bc, yellow,rgb(20 30 173));
+				padding:10px;
+			}
+			.two{
+				grid-column: 1/span 4;
+				background-image:linear-gradient(to right, rgb(0, 211, 255), rgb(0, 255, 116));
+				text-align:left;
+				padding:10px;
+				height:80px
+			}
+			.three{
+				grid-row:3/span 3;
+				  background-image: repeating-linear-gradient( pink, rgba(88, 128, 0, 0.8)20%);
+				text-align:left;
+				padding:40px;
+			}
+			.four{
+				grid-area:3/2/span 3/ span 2;
+				background-image: radial-gradient(hsl(351, 90%, 58%)10%, #f500ff 15%,hsla(66deg, 70%, 54%,1)60%);
+				text-align:left;
+				padding:10px;
+			}
+			.five{
+				grid-row:3/span 3;
+				background-color:hsla(314deg, 86%, 42%, 1);
+				text-align:center;
+				padding:40px;
+			}
+			p{
+				color:blue;
+				font-size:17px;
+			}
+			.line{
+				border:2px dashed blue;
+				height:150px;
+				 background-image: repeating-linear-gradient(200deg,violet,cyan 7%,orange 10%);
+			}
+			.line1 {
+				height: 150px;
+				background-color: red; 
+				background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+			}
+			.line2{
+				height: 200px;
+				width:300px;
+				background-color: red; 
+				background-image: conic-gradient(red, green, blue, black);
+				border-radius: 50%;	
+				}
+		</style>
+	<body>
+		<main>
+			<div class="one">
+				<h1>INDIAN SPACE RESEARCH ORGANISATION</h1>
+			</div>
+			<div class="two">
+				<p>The Indian Space Research Organisation is the national space agency of India, headquartered in Bengaluru. It operates under the Department 
+				of Space (DOS) which is directly overseen by the Prime Minister of India, while Chairman of ISRO acts as executive of DOS as well.
+				ISRO is the primary agency in India to perform tasks related to space based applications, space exploration and development of related technologies.
+				It is one of six government space agencies in the world which possess full launch capabilities, deploy cryogenic engines, launch extraterrestrial
+				missions and operate large fleets of artificial satellites.</p>
+			</div>
+			<div class="three">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQz0Qob1FoNICOQ2U_bJBDKLHsNzNVluUzfw&usqp=CAU" width="200px" height="200px"/><br/><br/>
+				<figcaption>PSLV LIFT-OFF WITH TWO UK SATELLITES</figcaption>
+			</div>
+			<div class="four">
+				<p>The night dark skies above Sriharikota in Nellore district of Andhra Pradesh lit up in bright orange hues as space launch vehicle 
+				PSLV-C42 lifted off and vanished into the thick black clouds, carrying two satellites from the United Kingdom – NovaSAR and S1-4 from the first 
+				launch pad at the Satish Dhawan Space Centre (SHAR).<p>
+				<p>PSLV-C-42, the lightest version of the PSLV (Polar Satellite Launch Vehicle) flying in its core-alone version without six strap-on motors,
+				rose into the skies at 10.08 p.m. Almost 18 minutes later, the two satellites were placed in the desired orbit by 
+				ISRO (Indian Space Research Organisation). This was the 12th launch of a core-alone version of the PSLV.</p>
+				<p>The two satellites, owned by Surrey Satellite Technology Ltd (SSTL) were placed in a circular orbit around the poles, 583 km from the Earth.
+				The commercial arm of ISRO, Antrix Corporation, earned more than ₹220 crore on this launch.</p>
+			</div>
+			<div class="five">
+				<img src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2018/06/07/690639-673433-pslv.jpg" width="200px" height="200px"/><br/><br/>
+				<figcaption>PSLV LIFT-OFF WITH TWO UK SATELLITES</figcaption>
+			</div>
+			<div class="six">
+				<p>Right now with the status of the rocket, the GSLV Mk-3 M1, and the present status of the satellite, we are not expecting any more delay. 
+				At the same time tests are going on.If unexpected things happen, that may have some impact. But right now, we are not anticipating any delay.
+				The other launches include the GSAT series that would provide bandwidth speeds of up to 100 Gbps per second, as part of the government’s Digital India</p>
+			</div>
+		</main><br/>
+		<h2>A repeating gradient on 200deg </h2>
+		<div class="line">
+		</div><br/>
+		<h2>Repeating Radial Gradient</h2>
+		<div class="line1"></div><br/>
+		<h2>Conic Gradient - Pie Chart</h2>
+		<div class="line2"></div>
+	</body>
+</html>
