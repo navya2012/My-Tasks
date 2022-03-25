@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Transform</title>
+		<style>
+            p{
+              font-size: 25px;  
+              border: 5px dotted crimson;
+              padding-left: 50px;
+              padding: 10px;
+              width: 700px;
+            }
+            .line{
+              transform:translate(500px,20px);
+            }
+            .line1:hover{
+                margin-left: 100px;
+                transform:scale(1,1.8);
+            }
+            .line2:hover{
+                transform: scaleX(0.5);
+                transform: scaleY(0.5);
+            }
+            img:hover{
+                transform: skew(20deg,10deg);
+            }
+            .para1:hover{
+               
+                transform: skewX(20deg);  
+            }
+            div p{
+                border: 5px dotted greenyellow;
+                padding-left: 30px;
+                margin: 10px;
+                padding: 20px;
+                width: 1000px;
+            }
+            .para:hover{
+                
+                transform: skewy(-10deg);
+            }
+            .fig:hover{
+                transform: rotate(90deg);
+                
+            }
+            .box:hover{
+                border:3px solid palevioletred;
+                width: 300px;
+                height: 100px;
+                background-color: aquamarine;
+                text-align: center;
+                margin-left: 100px;
+                transform: matrix(1, 0.5, 0.3, 1, 100, 10);  /* matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())*/
+            }
+            .line3:hover{
+                transform: rotatex(120deg)
+            }
+            .line4:hover{
+                transform: rotatey(120deg)
+            }
+            .line5:hover{
+                transform: rotatez(120deg)
+            }
+            h2{
+                background-color: yellowgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <h2>Transform-translate property</h2>
+            <p class="line">The translate method moves an element from its current position </p><br/>
+            <h2>Transform-scale property</h2>
+            <p class="line1">The scale() method increases or decreases the size of an element.</p>
+            <p class="line2">Transforms change the shape and position of the affected content without disrupting the normal document flow.</p><br/>
+            <h2>Transform-skew property</h2>
+            <img src="../images/Ladakh.jpg" /><br/><br/>
+            <div>
+            <p class="para1">Ladakh is a union territory in the Kashmir region of India. Formerly falling in the state of Jammu & Kashmir</p><br/>
+            <p class="para">Ladakh was administered a union territory on 31st October 2019. Extending from the Siachen Glacier to the main Great Himalayas</p><br/>
+        </div>
+            <h2>Transform-rotate property</h2>
+            <img class="fig" src="../images/fig3.jpg"/><br/><br/>
+            <h2>Transform-matrix property</h2>
+            <div class="box">TRANSFORM</div><br/><br/>
+            <p class="line3">CSS transforms are implemented using a set of CSS properties</p>
+            <p class="line4">Apply linear transformations to HTML elements.</p> 
+            <p class="line5">These transformations include rotation, skewing, scaling, and translation both in the plane and in the 3D space.</p>
+       </section>
+    </body>
+</html>

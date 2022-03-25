@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Animation</title>
+        <style>
+            .fig{
+                height: 200px;
+                margin: 20px;
+                width: 200px;
+                animation-name: rolling;
+                animation-delay: 1s;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes rolling{
+                0%{
+                    transform: rotate(0deg) scale(0.2) ;
+                }
+                100%{
+                    transform: rotate(360deg) scale(1.2);
+                }
+            }
+            .fig1{
+                height: 200px;
+                margin: 20px;
+                width: 200px;
+                animation-name: side;
+                animation-delay: 0s;
+                animation-duration: 5s;
+                animation-iteration-count: 20;
+                animation-direction: reverse;
+                animation-timing-function: linear;
+            }
+            @keyframes side {
+                from{
+                    margin-left:0%;
+                    width: 20%;
+                }
+                to{
+                    margin-left: 30%;
+                   width: 60%;
+                }
+            }
+            .fig2{
+                height: 200px;
+                margin: 20px;
+                width: 200px;
+                animation-name: round;
+                animation-delay: 0s;
+                animation-duration: 5s;
+                animation-iteration-count: 20;
+                position: relative;
+                animation-direction: alternate;
+                animation-timing-function: ease-in-out;
+            }
+            @keyframes round {
+                0%   {
+                     left:0px; top:0px;
+                    }
+                25%  {
+                    left:1000px; top:0px;
+                }
+                50%  {
+                     left:1000px; top:200px;
+                    }
+                75%  {
+                    left:0px; top:200px;
+                }
+                100% {
+                    left:0px; top:0px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <img class="fig" src="../images/animation.jpg" /><br/>
+        </div>
+       <div>
+            <img class="fig1" src="../images/cloud.webp"  />
+       </div>
+       <div>
+        <img class="fig2" src="../images/tree.jpg"  />
+   </div>
+        
+    </body>
+</html>
+

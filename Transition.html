@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Transition</title>
+        <style>
+            p{
+                transition-delay: 1s, 0.5s, 1.5s, 1s, 0.3s;
+                transition-duration: 10s, 5s, 2s, 6s, 3s ;
+                padding: 20px;
+            }
+            .line{
+                border: 2px solid ;
+                transition-property: background-color, border-style, border-width, border-color, margin ;
+            }
+            .line:hover{
+                background-color: palevioletred;
+                border-style: dotted;
+                border-width: 20px;
+                border-color: greenyellow;
+            }
+            .line1:hover{
+                background-color: violet;
+                border-style: inset;
+                border-width: 10px;
+                border-color: brown;
+                transition-timing-function: ease;
+            }
+            .line2:hover{
+                background-color: goldenrod;
+                border-style:outset;
+                border-width: 10px;
+                border-color: rosybrown;
+                transition-timing-function: linear;
+                margin-left: 30px;
+            }
+            .line3:hover{
+                background-color: rgb(197, 238, 130);
+                border-style: groove;
+                border-width: 10px;
+                border-color: rgb(165, 42, 138);
+                transition-timing-function: ease-in;
+                margin-left: 40px;
+            }
+            .line4:hover{
+                background-color: chartreuse;
+                border-style:ridge;
+                border-width: 10px;
+                border-color: rgb(53, 133, 42);
+                transition-timing-function: ease-out;
+                padding: 30px;
+            }
+            .line5:hover{
+                background-color:olivedrab;
+                border-style:double;
+                border-width: 20px;
+                border-color: chocolate;
+                transition-timing-function: ease-in-out;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="line">CSS transitions provide a way to control animation speed when changing CSS properties.</p><br/>
+        <p class="line1">ease specifies a transition effect with a slow start, then fast, then end slowly</p>
+        <p class="line2"> linear specifies a transition effect with the same speed from start to end</p>
+        <p class="line3"> ease-in specifies a transition effect with a slow start</p>
+        <p class="line4"> ease-out specifies a transition effect with a slow end</p>
+        <p class="line5"> ease-in-out specifies a transition effect with a slow start and end</p>       
+    </body>
+</html>
