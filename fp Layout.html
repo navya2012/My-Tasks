@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML fp Layouts</title>
+	</head>
+	<body>
+		<section style="border: 1px solid blue;">
+			<header style="border-bottom: 1px solid red; height: 60px; background-color: blue; display: flex;">
+				<div style="flex:1;">
+				</div>
+				<div style="flex:5;">
+					<label style="color:white;"><i>Flipcart </br>Explore plus</i></label>
+					<input type="search" name="search" placeholder="Search for products,brands and more;" size="50" maxlength="100"/>
+				</div>
+				<div style="flex:1;">
+					<input type="button" class="button" value="LOGIN" style="background-color: white;color:blue; padding:10px 30px; margin:10px;">
+				</div>
+				<div style="flex:1;">More
+				</div>
+				<div style="flex:1;">Cart
+				</div>
+			</header>
+			<div style="display:flex; border-bottom: 1px solid red; height:40px;">
+				<div style="flex:1;">Electronics
+				</div>
+				<div style="flex:1;">TVs& Appliances
+				</div>
+				<div style="flex:1;">Men
+				</div>
+				<div style="flex:1;">Women
+				</div>
+				<div style="flex:1;">Baby & Kids
+				</div>
+				<div style="flex:1;">Home & furniture
+				</div>
+				<div style="flex:1;">Sports,Books & More
+				</div>
+				<div style="flex:1;">Flights
+				</div>
+				<div style="flex:1;">Offer Zone
+				</div>
+				<div style="flex:1;">Grocery
+				</div>
+			</div>
+			<main style="border-bottom: 1px solid red; height: 800px; display:flex;">
+				<div style="flex:1; border-right: 1px solid green;">
+					<h2>Filters</h2>
+					<h5><hr>CATEGORIES</hr><h5>
+					<small>Mobile & Accessories</small>
+					<h4>Mobiles</h4>
+					<hr><h3>Price</h3></hr>
+					<input type="range" name="price" /><br/>
+					<select  name="min" value="min">
+						<option> Minimum</option>
+						<option value="0">0</option>
+						<option value="2000">2,000</option>
+						<option value="4000">4,000</option>
+						<option value="6000">6,000</option>
+						<option value="7000">7,000</option>
+						<option value="10000">10,000</option>
+						<option value="15000">15,000</option>
+						<option value="25000">25,000</option>
+						<option value="30000">30,000</option>
+						<option value="50000">50,000</option>					
+					</select>
+					   to
+					<select  name="50000+" value="50000+">	
+						<option> ₹50000+</option>
+						<option value="2000">2,000</option>
+						<option value="4000">4,000</option>
+						<option value="6000">6,000</option>
+						<option value="7000">7,000</option>
+						<option value="10000">10,000</option>
+						<option value="15000">15,000</option>
+						<option value="25000">25,000</option>
+						<option value="30000">30,000</option>
+						<option value="50000">50,000</option>
+					</select>
+				</div>
+				<div style="flex:3; display:flex;">
+					<div style="flex:1;">
+						<figure>
+							<img src="https://rukminim2.flixcart.com/image/312/312/ku04o7k0/mobile/x/x/t/9i-sport-mzb0a10in-redmi-original-imag785rwf3q8sft.jpeg?q=70"/>
+						</figure>
+						<input type="checkbox" name="Add to Compare"/>
+						<label>Add to Compare</label>
+						<figure>
+							<img src="https://rukminim2.flixcart.com/image/312/312/kulk9zk0/mobile/5/t/f/e40-parl0010in-motorola-original-imag7zz7rzhrkrk2.jpeg?q=70"/>
+						</figure>
+						<input type="checkbox" name="Add to Compare"/>
+						<label>Add to Compare</label>
+					</div>
+					<div style="flex:2;">
+						<table>
+							<tr>
+								<td><Small>Home</small></td>
+								<td><Small>Mobiles & Accessories</small></td>
+								<td><Small>Mobles</small></td>
+								<td><Small>realme Mobiles</small></td>
+								<td><Small>realme 9i(Prism, 64GB)</small></td>
+							</tr>
+						</table>
+						<h2>REDMI 9i Sport (Coral Green, 64GB)</h2>
+						<small>72,653 Ratings & 3,832 Reviews</small>
+						<ul>
+							<li>4 GB RAM | 64GB ROM | Expandable Upto 512GB</li>
+							<li>16.59 cm (6.53 inch) HD+ Display</li>
+							<li>13MP Rear Camera | 5MP Front Camera</li>
+							<li>5000 mAh Li-Polymer Battery</li>
+							<li>MediaTek Helio G25 Processor</li>
+							<li>Brand Warranty of 1 year Available for Mobile and 6 Months For Accessories</li>
+						</ul><br/><br/><br/><br/><br/><br/><br/>
+						<h2>MOTOROLA e40 (Carbon Gray, 64GB</h2>
+						<small>20,539 Ratings & 2,266 reviews</small>
+						<ul>
+							<li>4 GB RAM | 64GB ROM | Expandable Upto 1TB</li>
+							<li>16.51 cm (6.5 inch) HD+ Display</li>
+							<li>48MP+2MP+2MP | 8MP Front Camera</li>
+							<li>5000 mAh Battery</li>
+							<li>UNISOC T7000 Processor</li>
+							<li>Brand Warranty of 1 year Available for Mobile and 6 Months For Accessories</li>
+						</ul>
+					</div>
+					<div style="flex:1;">
+						<h2>₹8,999</h2>
+						<del>₹9,999</del> 10%off<br/>
+						Free delivery<br/>
+						Upto ₹8,450 Off on Exchange
+						<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+						<h2>₹10,049</h2>
+						<del>₹10,999</del> 9%off<br/>
+						Free delivery<br/>
+						Upto ₹9,500 Off on Exchange		
+					</div>
+				</div>	
+			</main>
+			<div style=" display:flex; border-bottom:1px solid red; height:220px;">
+				<div style="flex:1; display:flex;">
+					<div style="flex:0.5;"><br/>
+						<img src="https://rukminim2.flixcart.com/image/300/300/knoxnrk0/mobile/g/1/j/g60-panb0000in-panb0016in-panb0012in-panb0014in-motorola-original-imag2aq9v8hzetbn.jpeg?q=90" height="170px;"/>
+					</div>
+					<div style="flex:1;">
+						<h3>MOTOROLA e40 (Carbon Gray, 64GB)</h3>
+						<small>20,539 Ratings & 2,266 reviews</small><br/>
+						₹17,999 18%off
+						<p>4 GB RAM | 64GB ROM | Expandable Upto 1TB
+						16.51 cm (6.5 inch) HD+ Display
+						48MP+2MP+2MP | 8MP Front Camera</p>
+					</div>
+				</div>
+				<div style="flex:1;">
+					<small>Most Helpful Review</small>
+					<h3>Brilliant</h3>
+					<p style="margin:20px;">This phone is just wow, absolutely a best phone under 20k, got it for 14.5k on flipkart Diwali sale, phone and performance 
+					is just amazing no doubt, camera need some software improvements no lag about phone and display, 120hz 
+					display works amazingly fast,plaid pubg new age with no lag and performance issues.</p>
+				</div>
+				<div style="flex:1;">
+					<small>Recent review</small>
+					<h3>Very goog</h3>
+					<p style="margin:20px;">Battery performance is not as expected in 6000 mha . I had Mi and their 6000 mha battery was more powerful than Motorola. 
+					Except this other features are fine with this price range.</p>
+				</div>
+			</div>
+			<div style="display:flex; background-color:pink; height:180px;">
+				<div style="flex:1;">
+					<ul style="list-style-type:none;">ABOUT
+						<li>Contact Us</li>
+						<li>About Us</li>
+						<li>Careers</li>
+						<li>Flipkart Stories</li>
+						<li>Press</li>
+						<li>Flipkart Wholesale</li>
+						<li>Corporate Information</li>
+					</ul>
+				</div>
+				<div style="flex:1;">
+					<ul style="list-style-type:none;">HELP
+						<li>Payments</li>
+						<li>Shipping</li>
+						<li>Cancellation& Returns</li>
+						<li>FAQ</li>
+						<li>Report infringement</li>
+					</ul>
+				</div>
+				<div style="flex:1;">
+					<ul style="list-style-type:none;">POLICY
+						<li>Return Policy</li>
+						<li>Terms of use</li>
+						<li>Security</li>
+						<li>Privacy</li>
+						<li>sitemap</li>
+						<li>EPR Compliance</li>
+					</ul>
+				</div>
+				<div style="flex:1;">
+					<ul style="list-style-type:none;">SOCIAL
+						<li>FACEBOOK</li>
+						<li>TWITTER</li>
+						<li>YOUTUBE</li>				
+					</ul>
+				</div>
+				<div style="flex:1;">
+						<P>Mail Us:</P>
+						<P>Flipkart Internet Private Limited,
+						Buildings Alyssa, Begonia &
+						Clove Embassy Tech Village,
+						Outer Ring Road, Devarabeesanahalli Village,
+						Bengaluru, 560103,
+						Karnataka, India</P>
+				</div>
+				<div style="flex:1;">
+					<P>Registered Office Address:</P>
+					<P>Internet Private Limited,
+						Buildings Alyssa, Begonia &
+						Clove Embassy Tech Village,
+						Outer Ring Road, Devarabeesanahalli Village,
+						Bengaluru, 560103,
+						Karnataka, India
+						CIN : U51109KA2012PTC066107
+						Telephone: 1800 202 9898</P>
+				</div>
+			</div>
+			<footer style="display:flex; border-top:1px solid red; height:50px; background-color:yellow;">
+				<div style="flex:1;">Sell On Flipcart
+				</div>
+				<div style="flex:1;">Advertise
+				</div>
+				<div style="flex:1;">Gift Cards
+				</div>
+				<div style="flex:1;">Help center
+				</div>
+				<div style="flex:1;">2007-2022Flipcart.com 
+				</div>
+				<div style="flex:1;">
+				</div>		
+			</footer>
+		</section>
+	</body>
+</html>	
