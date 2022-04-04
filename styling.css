@@ -1,0 +1,227 @@
+            body{
+                margin: 30px;
+            }
+            #flex-container{
+                display: flex;
+            }
+            .space1{
+                flex:1
+            }
+            .space6{
+                flex:6
+            }
+            .same{
+                padding-top: 15px; transform: translateX(-150px); 
+            }
+            .same1{
+                padding-top: 15px; transform: translateX(-120px); 
+            }
+            .same2{
+                padding-top: 15px; transform: translateX(-90px); 
+            }
+            .same3{
+                padding-top: 15px; transform: translateX(-60px); 
+            }
+            .shade{
+                background-color: rgb(220 220 220 / 0.1); padding-left: 100px; padding-right: 100px;
+            }
+            .shade1{
+                background-color: cornsilk; padding-left: 100px; padding-top:30px;  padding-right: 80px; position: sticky; top: 0px; height: 50px;
+            }
+            .space2{
+                flex:2
+            }
+            header div:nth-child(1){
+                color: green; font-size: 25px; font-family: Arial, Helvetica, sans-serif;
+            }
+            header div:nth-child(3){
+                color: green;
+            }
+            .span1{
+                flex:1; 
+            }
+            .button{
+                background-color:white; color:green; padding:5px 10px 5px; border-color: green; border-width: 3px ; 
+            }
+            .row{
+                height: 400px; background-color: rgb(0 128 0 /0.6);
+            }
+            div .fig{
+                height: 400px; width: 1440px;  opacity: 0.1;
+            }
+            .line{
+                position: absolute; top: 260px;  left: 600px; font-size: 40px; font-family: Arial, Helvetica, sans-serif;
+            }
+            .para1{
+                position: absolute; top: 350px; text-align: center; padding-left: 100px; padding-right: 150px; font-size: 16px; 
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            .button1{
+                position: absolute; top: 450px; left: 700px; background-color: rgb(0 128 0 / 0.2); color: white; padding: 10px 30px;
+            }
+            .shade2{
+                background-color: rgb(220 220 220 / 0.2); height: 160px; padding: 100px;
+            }
+            #grid-container{
+                display: grid;
+                grid-template-columns: 28% 28% 28%;
+                grid-template-rows: 300px; column-gap: 60px; 
+            }
+            .grid{
+                 padding: 0px 10px 10px;
+            }
+            .line1{
+                font-size: 28px; text-align: center; padding-top: 20px; text-decoration: underline;
+            }
+            .para2{
+                text-align: center; padding-left: 100px; padding-right: 150px; 
+            }
+            .fig1{
+                width: 600px; height: 340px; padding-top: 45px;  padding-right: 150px; 
+            }
+            .para3{
+                padding-left: 100px; padding-top: 25px; padding-right: 50px;
+            }
+            .grid1{
+                  padding-left: 60px;  padding-top: 30px;
+            }
+            .side{
+                border-right: 1px solid goldenrod ; border-bottom: 1px solid goldenrod;
+            }
+            .side1{
+                border-bottom: 1px solid goldenrod;
+            }
+            .side2{
+                border-left: 1px solid goldenrod; border-right: 1px solid goldenrod;
+            }
+            #grid-container1{
+                display: grid;
+                grid-template-columns: 30% 30% 30%;
+                grid-template-rows: 270px 270px; padding-left: 100px;
+            }
+            .line3{
+                color: green;
+            }
+            .shade3{
+                padding-left: 120px; padding-right: 100px; 
+            }
+            .figs{
+                width: 100px; height: 40px;
+            }
+            .grid2{
+                  padding-left: 50px;  padding-top: 80px; background-color: white;  box-shadow: 5px 5px 5px 5px grey;
+            }
+            .grid2:hover{
+                transform: scale(1.08,1.08);
+            }
+            #grid-container2{
+                display: grid;
+                grid-template-columns: 30% 30% 30%;
+                grid-template-rows: 300px 300px; column-gap: 30px; row-gap: 30px; 
+                padding-left: 120px; padding-right: 50px; padding-top: 40px;
+            }
+            .mark{
+                padding-left: 50px;
+            }
+            .shade4{ 
+                background-color: rgb(0 128 0 / 0.5); height: 180px; padding-left: 120px; padding-right: 150px; padding-top: 50px;
+            }
+            .span2{
+                padding-top: 30px; padding-left: 150px;
+            }
+            .word{
+                font-size: 20px; border: 2px solid white; width: 120px; padding: 10px 30px ;
+            }
+            .shade5{
+                padding-left: 120px; padding-right: 150px; padding: 30px;
+            }
+            .button3{
+                background-color: rgb(0 128 0 / 0.5); text-align: center; padding: 10px 25px;
+            }
+            .pic1{
+                width: 360px; height: 380px;
+            }
+            .pic2{
+                width: 360px; height: 550px;
+            }
+            .pic3{
+                width: 360px; height: 250px;
+            }
+            .pic4{
+                width: 360px; height: 550px;
+            }
+            .pic5{
+                width: 360px; height: 250px;
+            }
+            .pic6{
+                width: 360px; height: 210px;
+            }
+            .pic7{
+                width: 360px; height: 250px;
+            }
+            .pic8{
+                width: 360px; height: 250px;
+            }
+            .pic9{
+                width: 360px; height: 250px;
+            }
+            .shade6{
+                background-color: rgba(127 255 212 / 0.2); height: 750px; padding-top: 20px;
+            }
+            #grid-container3{
+                display: grid;
+                grid-template-columns: 28% 28% 28%;
+                grid-template-rows: 480px; column-gap: 50px; padding-left: 120px; padding-right: 100px; padding-top: 50px;
+            }
+            .grid3{
+                 background-color: white; text-align: center; padding: 30px 30px 10px; 
+            }
+            .grid3:hover{
+                transform: scale(1.10,1.10);
+            }
+            .fig2{
+                width: 200px; height: 200px;  border-radius: 100px;
+            }
+            #grid-container4{
+                display: grid;
+                grid-template-columns: 40% 52% ;
+                grid-template-rows: 700px; column-gap: 50px; 
+                padding-left: 120px; padding-right: 100px; padding-top: 50px; 
+            }
+            .grid4{
+                 padding: 30px 30px 10px;border-top: 6px solid green; border-bottom: 6px solid green; box-shadow: 5px 5px 5px 5px gray;
+            }
+            [type="text"]{
+                padding: 15px; border: 1px solid pink; border-radius: 20px;
+            }
+           [name="email"]{
+                transform: translate(300px,-63px);
+            }
+            [name^='wo']{
+                width: 540px; height: 200px;
+            }
+            .let{
+                position: absolute;  right: 450px; top: 798%; 
+            }
+            .letter{
+                position: absolute; left: 730px; top: 812%;
+            }
+            .button2{
+                background-color: green; padding: 20px; color: white; border-radius: 10px; font-size: medium; transform: translateX(220px);
+            }
+            .shade7{
+                background-color: black; height: 260px; text-align: center; color: white; padding-top: 50px;
+            }
+            span{
+                color: green;
+            }
+            .word2{
+                font-family:Verdana, Geneva, Tahoma, sans-serif ;font-size: 25px;
+            }
+            .spot{
+                transform: translate(60px,-55px);
+            }
+          
+        
+        
+        
