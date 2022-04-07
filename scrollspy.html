@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scrollspy</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+         .box{
+             background-color: cyan;
+         }
+         .para{
+             padding-top: 20px; padding-bottom: 20px; background-color: pink;
+         }
+         .word{
+             padding-bottom: 20px;  padding-left: 20px;
+         }
+         .line{
+             padding-left: 40px; font-size: 17px;
+         }
+         .para1{
+             background-color: gold;  padding-top: 20px; padding-bottom: 20px;
+         }
+         .para2{
+             background-color: burlywood;  padding-top: 20px; padding-bottom: 20px;
+         }
+         .para3{
+             background-color: violet;  padding-top: 20px; padding-bottom: 20px;
+         }
+         .para4{
+             background-color: yellowgreen;  padding-top: 20px; padding-bottom: 20px;
+         }
+         .para5{
+             background-color: chocolate;  padding-top: 20px; padding-bottom: 20px;
+         }
+         .fig{
+             width: 1150px; height: 300px;
+         }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-fixed-top box navbar-inverse" >
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">ISRO</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link"  href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="#Missions">Missions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="#Missi">Missi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="#spacecraft">spacecraft</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="#pictures">picture</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="#launchers">launchers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="#about">about</a>
+                    </li>
+            </div>
+        </nav>
+    </div>
+        <div data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+        <div class="container">
+            <div id="Home" class="para">
+                <h2 class="word">CHACE-2</h2>
+                <p class="line">The Chandra’s Atmospheric Composition Explorer-2 (CHACE-2), a quadrupole mass spectrometer onboard Chandrayaan-2 mission has made the first-of-its-kind observations of the global distribution of Argon-40 in the tenuous lunar exosphere.  These observations provide insight on the dynamics of the lunar exospheric species, as well as on the radiogenic activities in the first few tens of meters below the lunar surface.
+                    ‘Exosphere’ is the outermost region of the upper atmosphere of a celestial body where the constituent atoms and molecules rarely collide with each other and can escape into space. Earth’s Moon features a surface-boundary-exosphere. For Moon, different constituents in the exosphere are fed from the surface by a variety of processes, such as thermal desorption, solar wind sputtering, photo-stimulated desorption, and micrometeorite impact vaporization.The exospheric atoms may be lost to space by the thermal escape (also known as the Jean’s escape). Also, the atoms get ionized by photo-ionization and charge exchange with the solar wind ions. Subsequently, they can be swept away by the convective electric field of the solar wind. Some of these atoms/ions can also be deposited back on the lunar surface. Thus, the lunar exosphere exists as a result of a dynamic equilibrium between several source and sink processes.</p>
+            </div>
+            <div id="Missions" class="para1">
+                <h2 class="word">Missions</h2>
+                <ul>
+                    <li>Design and development of launch vehicles and related technologies for providing access to space.</li>
+                    <li>Design and development of satellites and related technologies for earth observation, communication, navigation, meteorology and space science.</li>
+                    <li>Indian National Satellite (INSAT) programme for meeting telecommunication, television broadcasting and developmental applications.</li>
+                    <li>Indian Remote Sensing Satellite (IRS) programme for management of natural resources and monitoring of environment using space based imagery.</li>
+                    <li>Space based Applications for Societal development.</li>
+                    <li>Research and Development in space science and planetary exploration.</li>
+                </ul>
+            </div>
+            <div id="Missi" class="para3">
+                <h2 class="word">Missi</h2>
+                <ul>
+                    <li>Design and development of launch vehicles and related technologies for providing access to space.</li>
+                    <li>Design and development of satellites and related technologies for earth observation, communication, navigation, meteorology and space science.</li>
+                    <li>Indian National Satellite (INSAT) programme for meeting telecommunication, television broadcasting and developmental applications.</li>
+                    <li>Indian Remote Sensing Satellite (IRS) programme for management of natural resources and monitoring of environment using space based imagery.</li>
+                    <li>Space based Applications for Societal development.</li>
+                    <li>Research and Development in space science and planetary exploration.</li>
+                </ul>
+            </div>
+            <div id="spacecraft" class="para5">
+                <h2 class="word">spacecrafts</h2>
+                <p class="line">ndia’s Polar Satellite Launch Vehicle PSLV-C52 injected Earth Observation Satellite EOS-04, into an intended sun synchronous polar orbit of 529 km altitude at 06:17 hours IST on February 14, 2022 from Satish Dhawan Space Centre, SHAR, Sriharikota.
+                    PSLV lifted off at 05:59 hours IST from the first launch pad at SHAR. This was the 80th launch vehicle mission from SDSC SHAR, Sriharikota; 54th flight of PSLV; and the 23rd flight of PSLV in XL configuration (6 strap-on motors).
+                    The satellite EOS-04 is realised at U R Rao Satellite Centre, Bengaluru. It is a Radar Imaging Satellite designed to provide high quality images under all weather conditions for applications such as Agriculture, Forestry & Plantations, Soil Moisture & Hydrology and Flood mapping. Weighing about 1710 kg, it generates 2280 W power and has a mission life of 10 years. </p>
+            </div>
+            <div id="pictures" >
+                <img class="fig" src="https://images.firstpost.com/wp-content/uploads/large_file_plugin/2019/06/1560933588_Launch-vehicles-compared-720-250-kb.jpg"/>
+            </div>
+            <div id="launchers" class="para4">
+                <h2 class="word">Launchers</h2>
+                <p class="line">Launchers or Launch Vehicles are used to carry spacecraft to space. India has two operational launchers: Polar Satellite Launch Vehicle (PSLV) and Geosynchronous Satellite Launch Vehicle (GSLV). GSLV with indigenous Cryogenic Upper Stage has enabled the launching up to 2 tonne class of communication satellites. The next variant of GSLV is GSLV Mk III, with indigenous high thrust cryogenic engine and stage, having the capability of launching 4 tonne class of communication satellites.</p>
+            </div>
+            <div id="about" class="para2">
+                <h2 class="word">About</h2>
+                <p class="line">India decided to go to space when Indian National Committee for Space Research (INCOSPAR) was set up by the Government of India in 1962. With the visionary Dr Vikram Sarabhai at its helm, INCOSPAR set up the Thumba Equatorial Rocket Launching Station (TERLS) in Thiruvananthapuram for upper atmospheric research.Indian Space Research Organisation, formed in 1969, superseded the erstwhile INCOSPAR. Vikram Sarabhai, having identified the role and importance of space technology in a Nation's development, provided ISRO the necessary direction to function as an agent of development. ISRO then embarked on its mission to provide the Nation space based services and to develop the technologies to achieve the same independently.</p>
+            </div>
+        </div>
+</body>
+</html>
