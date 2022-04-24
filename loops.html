@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <script>
+        document.write( '<h1>For Loop</h1>')
+        for(i=0; i<=100; i+=2){
+            console.log(i);
+            document.write(i + '\n');
+        }
+
+        document.write( '<h1>While</h1>')
+        var i=0;
+        while(i<=200){
+            console.log(i);
+            document.write(i + '\n');
+            i+=2;
+        }
+
+        document.write( '<h1>Do.....While (odd numbers)</h1>')
+        var i=1;
+        do{
+            console.log(i);
+            document.write(i + '\n');
+            i+=2;
+        }
+        while(i<=100)
+
+        // Tables //
+        document.write( '<h1>Table Numbers</h1>' + '<h1>For Loop</h1>')
+        var  k=7;
+        for(j=1; j<=10;j++){
+           console.log( k + '*' + j + '=' + k*j);
+           document.write( k + '*' + j + '=' + k*j + '<br>');
+        }
+       
+        document.write( '<h1>While</h1>')
+        var k=10;
+        var j=1;
+        while( j<=10){
+            console.log( k + '*' + j + '=' + k*j);
+           document.write( k + '*' + j + '=' + k*j + '<br>');
+           j++;
+        }
+
+        document.write( '<h1>Do.....While</h1>')
+        var k=15;
+        var j=1;
+        do{
+            console.log( k + '*' + j + '=' + k*j);
+           document.write( k + '*' + j + '=' + k*j + '<br>');
+           j++; 
+        }
+        while( j<=10)
+    </script>
+</body>
+</html>

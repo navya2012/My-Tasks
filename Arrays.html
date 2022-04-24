@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <h1>Arrays</h1>
+    <script>
+        let numbers=[23,45,78,62,784,5265];
+        console.log(numbers);
+        console.log(numbers.length);
+
+        numbers[7]=1000;
+        console.log(numbers);
+        console.log(numbers.length);
+    
+        console.log(numbers.indexOf(78));          //index of -  gives the index of the number//
+        console.log(numbers.indexOf(99));          //given number is not present it gives as -1//
+
+        console.log(numbers.includes(784));          //includes --gives true value when value is present and index value is known//
+        console.log(numbers.includes(200));          //gives false value when value is not present//
+
+       
+        let places=["manali", "Ladakh", "andaman", "Goa", "patna", "jaipur"];
+        console.log(places);
+        console.log(places[3]);
+        console.log(places[2]);
+        console.log(places[0]);
+        console.log(places[1]);
+        console.log(places.length);
+
+        places[0]="srinagar";
+        console.log(places);
+        console.log(places.length);
+
+        console.log(places.toString());        // converting to array to string//
+
+        places.push("shimla")                  //adding new element ang it adds at last//
+        console.log(places);
+        console.log(places.length);
+
+        places.pop();                          //removes last element//
+        console.log(places);
+        console.log(places.length);
+
+
+        let fruits=["banana", "orange", "apple", "mango", "guava", "papaya"];
+        console.log(fruits);
+        fruits.shift();                         //shift removes the first element and moves the next element before//
+        console.log(fruits);
+
+        fruits.unshift("grapes");               //adds as first element and moves next elements to forward
+        console.log(fruits);
+    
+        console.log(fruits.sort());            //arranges in ascending order//
+
+        console.log(fruits.reverse());          //arranges in decending order//
+
+        delete fruits[3];                       //deletes the 3rd element and displays as undefined//
+        console.log(fruits);
+
+
+        //Merging//
+        let vegetables=["potato", "brinjal", "carrot", "pumpkin"];
+             num=[58,78,56,77,99,963];
+        let total = vegetables.concat(num);
+        console.log(total);                       //combines two arrays// 
+        
+         total = num.concat(fruits, vegetables);         //combines three arrays//
+         console.log(total); 
+        
+        let sum= num.concat("addition" , "multiply");   //combines string value to arrays//
+        console.log(sum);   
+
+        //splice//
+        let areas=["guntur", "kakani", "kurnool", "chirala"];   
+         // 1 -  place where to add elements based on index no;  krishna will add in index number 1 place   0 - how to items to remove    //
+        areas.splice(1, 0, "krishna");                                      
+        console.log(areas);                                            
+        areas.splice(3, 2 ,"bapatla");
+        console.log(areas);
+        areas.splice(0,3);              //removes two elements//
+        console.log(areas);
+
+        //slice//
+        let cities=["munbai", "delhi", "kolkata", "chennai", "hyderabad", "kerala", "karnataka"];
+        let city=cities.slice(2);                //slice - displays from the index number 2 element
+        console.log(city);
+        city=cities.slice(2, 5);                // starts from the given first index number and  displays up to the second index number //
+        console.log(city);
+
+        console.log(cities.join("and"));        // join  -  it converts into strings and joins with the mentioned value//
+        console.log(num .join("-"));
+
+        console.log(numbers.fill(100));         //fill - given element  fills with all the elements//
+        console.log(places.fill("100",2,5));    //   given element fills from 2 index no and up to 5 index no//
+
+
+        //peak element//
+        let array=[5 ,10,25,12,30,7,18,50,45,78,66,32,500,100,420,550,150,250,345,250];     
+        console.log(array);
+        let peaknum=array[0];
+        for(i=1; i<20; i++){
+            if(peaknum < array[i]){
+                peaknum = array[i];
+            }
+        }
+        console.log("The peak number is", peaknum);
+
+
+        let newnum=[0,1,2,3,4,5,6,7,8];          //copywithin - copies array elements to another position in an array, overwriting existing values.//  
+        console.log(newnum);  
+        newnum.copyWithin(2,4,7);                        // index no 4,5,6 (4,7)elements copy starts copying from index no 2//
+        console.log(newnum);       
+        newnum.copyWithin(5);                        //copywithin ( target,start,end) - target - where we have to copy; copy the elements from starting from index no 5//
+        console.log(newnum);                           
+        newnum.copyWithin(0,4);                         //start -starts copyin from given indev no; - indx no 4th elements starts copying from index no 0 //
+        console.log(newnum);                            //end - ends copying from the given index no//
+
+        let value=newnum.entries();
+        for(let [index, element] of newnum.entries() ){
+            console.log(index, element);
+        }
+       
+                           
+                              
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    
+    <script>
+        //function declaration/ function defnition /  add(a,b) - parameteres//
+        function add(a,b){
+            add = a+b;
+            console.log(add);2154
+            a=a+4;b=b+3;
+            console.log(a,b);
+            add = a+b;
+            console.log(add);
+        }
+
+        //function call /invoking a function //  add(4,3) - arguments//
+        add(4,3);
+
+        function mul(a,b){
+            mul = a*b;
+            console.log(mul);
+            document.write('<h2>multiply</h2>' + mul +'<br>')
+            a++;b++;
+            console.log(a++,b++);
+            document.write(a++ + '\n' + b++ +'<br>')
+            mul=a*b;
+            console.log(mul);
+            document.write( mul +'<br>')
+        }
+        mul(4,4);
+
+        let num1=prompt("please enter your num1");
+        let num2=prompt("please enter your num2");
+        function  comp(num1,num2){
+           
+            let result=num1 < num2;
+            if(result){
+                console.log("num1 is lesser");
+                alert("num1 is lesser")
+            }
+            else{
+                alert("num2 is greater");
+            }
+        }
+        comp(num1,num2);
+
+        function operators(x,y){
+
+            console.log( x < 30 && y < 20);     //AND operator//
+            console.log( x > 30 && y > 20);
+
+            console.log( x < 30 || y < 20);     //OR operator//
+            console.log( x > 30 || y > 20);
+        }
+        operators(20,20);
+
+        function loop(){
+            document.write('<h2>power</h2>')
+            var i=1;
+            var c;
+            do{
+                c=i*i;
+                console.log(c);
+                document.write( c + '\n')
+                i=i+1;
+                
+            }
+            while(i<=10)
+        }
+        loop();
+
+        function fact(){
+            document.write('<h2>Factorial</h2>')
+            var fact=1;
+            for(i=1; i<10; i++){
+                fact = fact * i;
+                console.log(fact);
+                document.write( fact + '\n')
+            }
+        }
+        fact();
+
+        function natural(){
+            document.write('<h2>Natural Numbers</h2>')
+            var i=1;
+            var x;
+            while(i<=10){
+               x=(i*(i+1)/2);
+                console.log(x);
+                document.write( x + '\n')
+                i++;
+            }
+        }
+        natural()
+
+        //arrays//
+        function numbers(long){
+            let numbers=[23,45,78,62,784];
+            console.log(numbers);
+            console.log(numbers.length);
+        }
+        numbers(length);
+
+        let areas=["guntur", "kakani", "kurnool", "chirala"];   
+        function splice(areas){   
+            areas.splice(1, 0, "krishna");                                      
+            console.log(areas); 
+        }
+        splice(areas);
+
+        let fruits=["banana", "orange", "apple", "mango", "guava", "papaya"];
+        function order(fruits){
+            console.log(fruits.sort());   
+            console.log(fruits.reverse());   
+        }
+        order(fruits);
+
+        //strings//
+        let user = "your account will be permanently deleted"
+        console.log(typeof user);
+        function welcome(user){
+            
+            if (window.confirm(" Are you sure to proceed?")) {
+                console.log("ok proceed");
+            } 
+            else {
+                console.log("cancel");
+            }
+        }
+        welcome(user);
+
+
+        let fileName="certificates.pdf";
+        let split=fileName.split('.');
+        function upload(fileName, split){
+            console.log(split);
+            if(split[1] == "doc" || split[1] == "pdf"){
+                console.log("uploaded successfully");
+            }
+            else{
+                console.log("upload again")
+            }
+
+            if(split[0] == "photos" || split[0] == "documents"){
+                console.log("uploaded successfully");
+            }
+            else{
+                console.log("upload again")
+            }
+        }
+        upload(fileName, split);
+
+        let number="500"; 
+        function padding(number){
+            console.log(number);
+            console.log(number.padStart(7, "200 "));
+            console.log(number.padEnd(7, " 200"));
+        }                                          
+        padding(number);
+
+    </script>
+</body>
+</html>

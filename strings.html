@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>strings</title>
+</head>
+<body>
+    <h1>strings</h1>
+    <script>
+       let places="manali, Goa, patna";
+       console.log(places);
+       console.log(typeof places);
+       console.log(places.charAt(3));                    //position of the value//      
+       console.log(places.charAt(6));
+       console.log(places.charAt(8));
+       console.log(places[10]);
+       console.log(places[15]);
+       console.log(places.length);                            //counts individual characters//
+
+       console.log(places.slice(8));         
+       console.log(places.slice(8,11));               //starts at 8index no upto 11 index no// 
+       console.log(places.slice(-10,-7));             //-ve sign means position is counted from the end of the string.//
+
+       console.log(places.substring(13,18));        //similar to slice but not accept -ve values//
+
+       console.log(places.substr(8));         
+       console.log(places.substr(8,10));                 //similar to slice but second parameter specifies length of the string//
+
+    
+       let vegetables="potato, carrot, carrot, carrot,  CARROT, pumpkin";
+       console.log(vegetables.replace("carrot", "radish"));     //replaces the first word to second word; first word must be from the given string//
+       console.log(vegetables.replace(/carrot/g, "radish"));     //  /g - replaces all the given words with radish at a time//
+       console.log(vegetables.replace("CARROT","radish"));
+       console.log(vegetables.replace(/carrot/ig,"radish"));     //  /i  - conerts uppercase to lower case and then replaces//
+
+
+       let names="navya meghana";
+       console.log(names.toUpperCase());                          // uppercase - changes to capitals//
+       console.log(names.toLowerCase());                          // lower case - changes to small letters//
+
+       let areas="guntur,chirala";
+       let num= "58, 78, 963";
+       console.log(areas.concat(num));
+
+       let name="         navya meghana     ";                          // deletes spaces from  first end and last end//
+       console.log(name);
+       console.log(name.trim());
+      
+        
+       let number="500"                                           // pads(adds) a string with another string:
+       console.log(number);
+       console.log(number.padStart(7, "200 "));
+       console.log(number.padEnd(7, " 200"));
+
+       let fruits="banana, orange, apple, mango, guava, papaya";
+       console.log(fruits);
+       console.log(fruits.split(" "));
+       console.log(fruits.split(","));
+       console.log(fruits.split("|"));
+
+       let word="please locate here please";
+        console.log(word.indexOf("please"), word.lastIndexOf( "please"));       //indexof - position of first occurence//
+        console.log(word.indexOf("e"), word.lastIndexOf( "e"));            //lastindexof - position of last occurence in text counts index no from first//
+        console.log(word.indexOf("l"), word.lastIndexOf( "here"));    
+        console.log(word.indexOf("locate",10));                      // check the position of index after 10th index no if value is present it gives index no; if not it gives as -1 //
+        console.log(word.indexOf("locate",7)); 
+
+        console.log(word.search("here"));                           //similar to indexof but secong arguement is not given//
+
+        let word1="please locate PLEASE  here";                      //converts strings to arrays//
+        console.log(word1.match("ease")); 
+        console.log(word1.match(/ere/)); 
+        console.log(word1.match(/ease/gi)); 
+        console.log(word1.match("locate")); 
+
+        console.log(word.includes("locate"));                       //checks value if it is present gives true or else false//
+        console.log(word.includes("e"));
+
+        console.log(word.startsWith("please"));                     //  word starts with in the given atring it gives true or else false//
+        console.log(word.startsWith("here"));
+        console.log(word.startsWith("locate", 7));                  //checks after 7th index no it it present gives true or else false//
+        console.log(word.startsWith("locate", 10)); 
+
+
+        console.log(word.endsWith("please"));
+        console.log(word.endsWith("here", 18));                     //if the 18 first characters of a string ends with "here"  it gives true value or else false//
+        console.log(word.endsWith("here", 10));
+
+        let fileName="certificates.pdf";
+        let split=fileName.split('.');
+        console.log(split);
+        if(split[1] == "doc"){
+            console.log("uploaded successfully");
+        }
+        else{
+            console.log("upload again")
+        }
+
+    </script>
+</body>
+</html>

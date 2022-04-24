@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic operators in js</title>
+</head>
+<body>
+    
+    <script>
+        var a=100;                     //integer data type//
+        console.log(typeof a);
+        console.log(typeof 100);
+        console.log(a);             //shows assigned value//
+        console.log("a");
+        console.log(100);
+
+        var firstName = "navya";       //string data type//
+        console.log(typeof firstName);
+        console.log(firstName);
+        console.log("firstName");
+        console.log("navya");        
+
+        var flag = true;              //boolean data type//
+            value= false;
+        console.log(typeof flag, typeof value);
+        console.log(flag, value);
+
+        var xyz;                     //undefined data type//
+        console.log(typeof xyz);
+        console.log(xyz);
+
+        var a=50;                   //arithmetic operators//
+            b=20;
+        console.log(a + b);
+        console.log(a - b);
+        console.log(a * b);
+        console.log(a / b);
+        console.log(a % b);
+        console.log(2 ** 3);        // 2 power 3 //
+
+        console.log(a += 10);       // assignment operators//
+        console.log(a -= 10);
+        console.log(b *= 10);
+        console.log(b /= 10);
+        console.log(b %= 10);
+
+        console.log(a++);   //post increment//
+        console.log(a);
+
+        console.log(++b);    //pre increment//
+        
+        a++;                   //increment//
+        console.log(a);
+
+        var c=10;
+        c--;                      //decrement//
+        console.log(c);
+        console.log(--c);           //pre decrement//
+        console.log(c--); 
+        console.log(c);             //post decrement //
+        
+        var x=20;                   //comparison operators//
+            y=10;                   
+        console.log( x < y);
+        console.log( x > y);
+        console.log( x <= y);
+        console.log( x >= y);
+        console.log( x == y);       //checks only value//
+        console.log( x === y);      //checks value and data type//
+        console.log( x != y); 
+
+        console.log( x < 30 && y < 20);     //AND operator//
+        console.log( x > 30 && y > 20);     
+
+        console.log( x < 30 || y < 20);     //OR operator//
+        console.log( x > 30 || y > 20);
+
+        var marks=20;                      //ternary operator//
+        marks < 10 ? console.log(true): console.log(false);
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch case statements</title>
+</head>
+<body>
+    <h1>Switch Case Statements</h1>
+    <script>
+        var  marks=55;
+        switch (true){
+            case (marks > 70):
+                console.log("Grade is A");
+            case (marks < 70 && marks > 60) :
+                console.log("Grade is B");
+            case (marks < 60 && marks > 50) :
+                console.log("Grade is C");
+            case (marks < 50 && marks > 40) :
+                console.log("grade is D");
+            case (marks < 40) :
+                console.log("FAIL");
+        }
+
+
+        var marks=45;                                   // with break statements//
+        switch (true){
+            case (marks > 70):
+                console.log("Grade is A");
+                break;
+            case (marks < 70 && marks > 60) :
+                console.log("Grade is B");
+                break;
+            case (marks < 60 && marks > 50) :
+                console.log("Grade is C");
+                break;
+            case (marks < 50 && marks > 40) :
+                console.log("grade is D");
+                break;
+            case (marks < 40) :
+                console.log("FAIL");
+        
+        }
+
+
+        let day;
+        switch (day) {
+            case 'monday':
+                console.log('7am');
+            case 'tuesday':
+                console.log('8am');
+            case 'wednesday':
+            case 'thursday':
+            case 'friday':
+                console.log("5am");
+            case 'saturday':
+                console.log('6am');
+            default :
+                console.log('sunday')
+        }
+
+
+        let time='tuesday';
+        switch (time) {
+            case 'monday':
+                console.log('7am');
+            case 'tuesday':
+                console.log('8am');
+            case 'wednesday':
+            case 'thursday':
+            case 'friday':
+                console.log("5am");
+                break;
+            case 'saturday':
+                console.log('6am');
+            default :
+                console.log('sunday')
+        }
+    </script>
+</body>
+</html>

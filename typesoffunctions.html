@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of Functions</title>
+</head>
+<body>
+
+    <script>
+
+         function div(a,b){                         //function with parameters//
+            div = a/b;
+            console.log(div);
+            a--,b--;
+            console.log(a--,b--);
+            div =a--/b--;
+            console.log(div);
+        }
+        div(20,10);
+
+        let base = 20;
+        let height = 40;
+        function area(){                            //function without parameters//
+            area = 0.5*base*height;
+            console.log(area);
+        }
+        area();
+
+        function salestax(costofanitem, salestaxrate=20){    //function with default parameters//
+            salestax = costofanitem * salestaxrate/100;
+            console.log(salestax);
+        }
+        salestax(500);
+
+
+        console.log(myFunction("World"));
+        function myFunction(name) {                     //function with return statement//
+            return "Hello " + name;
+        
+        }
+        myFunction();
+
+        function addnum(p,q){
+            result = p+q;
+            return result;
+        }
+        console.log(addnum(3,4));
+
+
+        let arrays = [3, 5, 4 ,8, 12, 15, 100 ];         //variable declaration or function expression//
+        let cubes = function(arrays){
+            for(i=0; i<7; i++){
+                cubes = arrays[i]*arrays[i]*arrays[i];
+                console.log(cubes);
+            }
+        }
+        cubes(arrays);
+        
+        (function (num1,num2){                             //self-invoking - Function expressions will execute automatically;without being called//
+            let result=num1 < num2;
+            if(result){
+                console.log("num1 is lesser");
+                alert("num1 is lesser")
+            }
+            else{
+                alert("num2 is greater");
+            }
+        })(60,50);
+
+
+        (function(){
+            alert("HELLO WORLD");
+        })();
+
+
+        function loop(callback){                    //callback functions - pass a function as an argument to a another function. //
+            for(i=1; i<=10; i++){
+                let y= i+2;
+                console.log(y);
+                callback();
+            }
+        }
+        function odd(){
+            for(i=1; i<=10; i+=2){
+                let x = i*i
+                console.log(x); 
+            }
+        }
+        loop(odd);
+
+       
+        function add(a,b){                      //nested functions//
+            add = a+b;
+            console.log(add);
+        }
+        function sub(a,b){
+            sub = a-b;
+            console.log(sub);
+            add(40,20);
+        }
+        function mul(a,b){
+            mul = a*b;
+            console.log(mul);
+            sub(40,20);
+        }
+        function power(a,b){
+            power = a**b;
+            console.log(power);
+            mul(40,20);
+        }
+        power(4,4);
+
+
+            function numbers(n){                         //recurrsive function - Recursion is a process of calling itself inside the function//
+            if(n > 0){
+                console.log(n);
+                numbers(n-1);
+            }
+        }
+        function num(n){
+            for(i=n; i>0; i--){
+                    let s=i*2
+                    console.log(s);
+                    num(n-1);
+            }
+        }
+        num(10);
+        numbers(10);
+
+
+        let product=(a,b) =>{                        //arrow function //
+            let result=a*b;
+            console.log(result);
+        }
+        product(9,100);
+
+        let subtract=(a,b) =>{
+            let result=a - b;
+                return result;  
+        }
+        console.log(subtract(900,200));
+
+        division=(a,b) => a/b;
+        console.log(division(800,40));
+
+        greet =() => console.log("GOOD MORNING");           //arrow function without arguements//
+        greet();
+
+        greet = _ =>{
+            console.log("Good Afternoon");
+            console.log("Good Evening");
+        } 
+        greet();
+
+
+        function* myGen(){                  //generator function //
+            yield console.log('strings')
+            yield console.log('arrays')
+            console.log('arrow functions')
+            console.log('variable declaration functions')
+            console.log('callback functions')
+        }
+        var itr = myGen();  //generator-iterator//
+        itr.next();
+        itr.next();
+        console.log("Types of Functions");
+        itr.next();
+        itr.next();
+        itr.next();
+
+        function* myGen(){                  //generator function - data from generator function passes to outside //
+            yield 'strings';
+            yield 'numbers';                //yield expression//
+            yield 'arrays'; 
+            return 'all';                   
+        }
+        var itr = myGen();                      
+        console.log(itr.next());            //evluates the yield expression values and returns value as object//
+        console.log(itr.next());             //in object gives 2 properties - one is value- actual value two is boolean property-gen fun is still need to execute
+        console.log(itr.next());                                               
+        console.log(itr.next());            //bolean property is true as execute stops//
+
+    </script>
+</body>
+</html>
