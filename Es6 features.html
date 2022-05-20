@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Es6 features</title>
+</head>
+<body>
+    
+    <script>
+        // var let and const
+        var course = "Javascript";                 //var - we can reassign and redeclare values
+        var course = "ES6 concepts";
+        console.log(course);
+
+       
+        if(a<b){                                    //if we redeclare variable in block code and access(console) it after the block code it gives output//
+            var a=10; 
+            var b = 20;
+        }
+        console.log("a is less than b");
+
+        function myfunction(location){
+            var location = "guntur";
+            console.log(location);
+        }
+        myfunction(location);
+
+        let courses = "HTML";
+            courses = "CSS";
+        console.log(courses) 
+ 
+       /* if(c < d){                           //if we redeclare variable in block code and access(console) it after the block code it gives error//
+            let c=10; 
+            let d = 20;
+        }
+        console.log("c is less than d");
+
+       function myfunction(location){
+           let location = "guntur";
+            console.log(location);
+        }
+        myfunction(location);*/
+       
+
+        //arrow functions//
+        let addition=(a,b) =>{                        //arrow function //
+            let result=a + b;
+            console.log(result);
+        }
+        addition(950,100);
+
+        let multiply=(a,b) =>{
+            let result=a * b;
+                return result;  
+        }
+        console.log(multiply(90,50));
+
+        division=(a,b) => a/b;
+        console.log(division(800,40));
+
+        greet =() => console.log("GOOD MORNING");           //arrow function without arguements//
+        greet();
+
+        greet = _ =>{
+            console.log("Good Afternoon");
+            console.log("Good Evening");
+        } 
+        greet();
+
+        //destructuring//
+       let numbers= [23,45,78,62,784,52,65];        
+       const[,,,fourthNumber,FifthNumber] = numbers;
+       console.log(fourthNumber,FifthNumber);
+
+       let places=["manali", "Ladakh", "andaman", "Goa", "patna", "jaipur"];
+       const[,second,third,,,sixth] = places;
+       console.log(second,third,sixth);
+
+       let person = {
+            firstName:'deepthi',
+            isprimeuser : 'false',
+            address:{
+                place : 'Banglore',
+                street : 'rajivgandhinagar',
+                    location:{
+                    city : "guntur",
+                    state : "andhra",
+                    country : "India",
+                } 
+            },
+            lastName: 'sharma', 
+            id:500,   
+            }
+        const{address:{street}} = person;
+        console.log(street);
+        const{address:{state}} = person;
+        console.log(state);
+        const{address} = person
+        console.log(address);
+
+        // rest and spread parameters//
+        // rest using arrays//
+        function number(...paras){
+            console.log(paras);
+            let sum = 0;
+            for(let x of paras){
+                sum = x + sum;
+            }
+            console.log(sum)
+        }
+        number(2,3,4,8,6,7,8,9);
+
+        //rest using objects//
+       const {firstName,lastName, ...otherinfo } = person;
+       console.log(otherinfo);
+
+        //spread using arrays//
+        let vegetables=["potato", "brinjal"];           
+        let num=[58,78,56,77,99,963];
+        let result = [...vegetables,...num,...numbers];
+        console.log(result);
+        
+        //spread using object//
+        let userData={
+            name : 'Sonia',
+            title : 'Gold & Silver Dragon Station Chain Bracelet',
+            price: 695,
+        }
+        let user = {...person, ...userData };
+        console.log(user);
+        let user1 = {...person, ...userData,  category: 'jewellery', rate:4.6, };
+        console.log(user1);
+
+
+        //string template literal//
+        let myuser = "Hello!"
+        console.log(`${myuser} welcome to 10000 coders`);
+
+      
+        for(i=0; i<=10; i+=2){
+            console.log(`The even numbers from 1 to 10 are ${i}`);
+           
+        }
+
+
+    </script>
+</body>
+</html>

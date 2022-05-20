@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inbuilt - functionst</title>
+</head>
+<body>
+    
+    <button onclick="stop()">Stop!</button>
+    
+    <script>
+        //date object //
+        let a = new Date();
+        console.log(a);
+        console.log(a.getDate());
+        console.log(a.getDay());   // 0-sunday 1 - monday....//
+
+        console.log(a.getFullYear());
+        console.log(a.getYear())
+
+        console.log(a.getHours());
+        console.log(a.getMilliseconds());
+        console.log(a.getMinutes());
+        
+        console.log(a.getMonth());             // 0 -januaey 1- february //
+
+        console.log(a.getSeconds());
+        console.log(a.getTime());
+
+        console.log(a.toDateString());
+
+        console.log(`${a.getDate()}-${a.getMonth()}-${a.getFullYear()}`);
+
+        let date = new Date("1, 8 , 22");    // 1 -month  8 - date   22 -year- 2022 //
+        console.log(date);
+        let date1 = new Date(1, 8 , 22);        // 1- year- 1901  8- month   22 - date//
+        console.log(date1);
+        let date2 = new Date(45, 2 );      // 45 -year - 1945  2 - month //
+        console.log(date2);
+
+        //set time function//
+       setTimeout(function(){
+          console.log("welcome to 10000 coders")
+       },3000);
+
+       //settimeout, cleartimeout//
+       let fruits=["banana", "orange", "apple", "mango", "guava", "papaya"];
+        let mytimeout = setTimeout (function (){
+          console.log(fruits.sort());    
+        },4000);
+
+        function stop(){
+            clearTimeout(mytimeout);
+        }
+       
+        //Math objects//
+        function calcAngle(opposite, adjacent) {          //anglr of right angled triangle
+            return Math.atan(opposite / adjacent);
+        }
+        console.log(calcAngle(8, 10));
+
+
+        function logarithm(){
+            return Math.LN2
+        }
+        console.log(logarithm());
+
+        let b = Math.LN10;
+        console.log(b);
+        console.log(Math.LOG10E);
+        console.log(Math.LOG2E);
+        console.log(Math.PI);
+        console.log(Math.SQRT1_2);
+        console.log(Math.SQRT2);
+
+        function num(x) {
+            return Math.abs(x);          //abs - absolute value  - positive values - negative values are converted to positive//
+        }
+        console.log(num(-8));                        
+        function diff(a,b){
+            return Math.abs(a - b)
+        }
+        console.log(diff(4,5))
+
+        let c = Math.acos(-1);           // returns value between -1 to 1 ; for greater than 1, Math.acos() returns NaN.  
+        console.log(c)
+        console.log(Math.acosh(2));      // returns Nan for less than -1 - cosine values of number
+        console.log(Math.asin(1));
+        console.log(Math.atan2(5,6));   //returns the angle in the plane (in radians) between the positive x-axis and the ray from (0,0) to the point (x,y)
+        console.log(Math.cbrt(125));
+       
+        console.log(Math.ceil(5.08));      //rounds a number up to the next largest integer.
+        console.log(Math.ceil(5.88));
+       
+        console.log(Math.clz32(2));      //returns the number of leading zero bits in the 32-bit binary representation of a number.
+       
+        console.log(Math.exp(2));           //exponential value - e^x, where x is the argument, and e is Euler's number,the base of the natural logarithms.
+        console.log(Math.expm1(2));      //e^x - 1, where x is the argument, and e the base of the natural logarithms.
+
+        console.log(Math.floor(-6.68));      //returns the largest integer less than or equal to a given number.
+        console.log(Math.fround(8.086));         // returns the nearest 32-bit single precision(float)
+
+        console.log(Math.hypot(7));         //returns the square root of the sum of squares of its arguments
+        console.log(Math.hypot(2,7));  
+
+        console.log(Math.imul(-3,4));      //returns the result of the C-like 32-bit multiplication of the two parameters.
+
+        console.log(Math.log(5,8));           //returns the result of the C-like 32-bit multiplication of the two parameters.
+        console.log(Math.log1p(2))          //The natural logarithm (base e) of 1 plus the given number. 
+
+       
+        console.log(Math.max(5,8,10,2,8,6));        // maximun and minimum values
+        console.log(Math.min(5,8,10,2,8,6));
+
+        console.log(Math.pow(7,3));         // 7 power 3//
+
+        console.log(Math.random() * 1000000);
+        console.log(Math.random(8));
+
+        console.log(Math.round(5.25), Math.round(5.85), Math.round(5.5)); //function returns the value of a number rounded to the nearest integer.
+
+        /*If the argument is positive, returns 1.; If the argument is negative, returns -1.
+        If the argument is positive zero, returns 0 ; If the argument is negative zero, returns -0 ; Otherwise, NaN is returned.*/
+        console.log(Math.sign(5), Math.sign(-5),Math.sign(-0));
+
+        console.log(Math.sqrt(81));
+
+        console.log(Math.trunc(42.54789),Math.trunc(7895.56875));   //function returns the integer part of a number by removing any fractional digits.
+
+
+    </script>
+</body>
+</html>

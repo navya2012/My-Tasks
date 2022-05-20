@@ -1,0 +1,97 @@
+<html>
+  <head>
+    <title>ModalPopUp</title>
+   </head>
+  <style>
+    .modal {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      visibility: hidden;
+      transform: scale(1.1);
+      transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    }
+
+     .modal-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 1rem 1.5rem;
+      width: 24rem;
+      border-radius: 0.5rem;
+    }
+
+    .close-button {
+      float: right;
+      width: 1.5rem;
+      line-height: 1.5rem;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 0.25rem;
+      background-color: lightgray;
+    }
+
+    .close-button:hover {
+    background-color: darkgray;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+  </style>
+  <button class="trigger"> click me to show modalpopup-10KC</button>
+  <body>
+     <div class="modal">
+      <div class="modal-content">
+        <span class="close-button">X</span>
+        <div class="modal-content-right">
+        <form action="#" method="GET" class="modal-form" id="form">
+            <h1>get started with u s and fil out the information</h1>
+            <div class="Form-validation">
+                <input type="text" class="modal-input" id="name" name="name" placeholder="Enter your name">
+                <span id="namerr"></span>
+          </div>
+          <input type="submit" class="modal-input-btn" vlaue="SignUp">
+          <div>
+      </div>
+    </div>
+    <script>
+    const modal = document.querySelector(".modal");
+const trigger = document.querySelector(".trigger");
+const closeButton = document.querySelector(".close-button");
+const form = document.getElementById('form');
+const email1 =  document.getElementById('email');
+
+const validateForm = function(e){
+e.preventDefault();
+var name1 = document.getElementById("name").value;
+{
+    if(name1 == '')
+    {
+        document.getElementById('namerr').innerHTML = "user name should not be empty";
+        document.getElementById('namerr').style.color = "red";
+        document.getElementById('name').style.border = "1px solid red";
+    }
+}
+}
+
+function toggleModal() {
+    modal.classList.toggle("show-modal");
+}
+
+document.getElementById('form').addEventListener('submit',validateForm);
+trigger.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", toggleModal);
+
+    </script>
+  </body>
+</html>

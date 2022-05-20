@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>patterns</title>
+</head>
+<body>
+    
+    <script>
+        for(rows=1; rows<=6; rows++){
+            for(cols=1; cols<=6-rows; cols++){
+                document.write('*' + '\n');
+            }
+            document.write( '<br>');
+        }
+
+
+        for(rows=1; rows<=6; rows++){
+            for(cols=1; cols<=rows; cols++){
+                document.write('*' + '\n');
+            }
+            document.write( '<br>');    
+        }
+
+    
+        for(i=1; i<=6; i++){
+            for(j=1; j<=i; j++){
+                document.write( j + '\n');  
+            }
+            document.write( '<br>');
+        }
+
+        for(i=1; i<=6; i++){
+            for(j=1; j<=i; j++){
+                document.write( i + '\n');
+            }
+            document.write( '<br>');
+        }
+
+
+        var  k = 1;
+            for(i=1; i < 6; i++){
+                for(j=1; j<=i; j++){
+                    document.write(k++ + '\n');
+                }
+                document.write("<br>");
+            }
+    </script>
+</body>
+</html>
